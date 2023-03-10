@@ -1,33 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
 
-* {
-	box-sizing: border-box;
-	font-family: "Cinzel", serif;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-	margin: 0;
-}
-
-main {
+.book {
+	--book-height: 80vh;
+	--book-ratio: 1.4;
 	display: flex;
 	justify-content: center;
-	background-color: #d9d9d9;
-}
-
-.book {
-	--book-height: 100vh;
-	--book-ratio: 1.4;
 }
 
 .book > div {
@@ -63,14 +40,14 @@ main {
 	background-color: #25afb8;
 }
 
-h1 {
+.BookTitle {
 	font-family: "Petemoss", cursive;
 	font-size: 7rem;
 	font-weight: 300;
 	color: #f84f85;
 }
 
-h2 {
+.BookSubTitle {
 	font-size: 3rem;
   color: #25afb8;
 }
@@ -109,23 +86,7 @@ h2 {
 	transition: all 0.3s 1s;
 }
 
-.book-content h3,
-.book-content p {
-	opacity: 0;
-	transition: all 0.3s 0.3s;
-}
-
-h3 {
-	padding: 30px;
-}
-
-p {
-	padding: 0px 30px 10px 30px;
-	text-align: justify;
-	font-size: 14px;
-}
-
-img{
+.DJOTW{
   width: 100%;
   object-fit: contain;
 }
@@ -162,11 +123,11 @@ img{
     width: calc(var(--book-height) / var(--book-ratio));
   }
 
-  h1 {
+  .BookTitle {
     font-size: 4rem;
   }
 
-  h2 {
+  .BookSubTitle {
     font-size: 2rem;
   }
 
@@ -175,14 +136,5 @@ img{
     margin: 30px auto 40px auto;
   }
 
-  h3 {
-    padding-left: 5rem;
-    font-size: 1.5rem;
-  }
-
-  p {
-    padding-left: 5rem;
-    font-size: 1rem;
-  }
 }
 
